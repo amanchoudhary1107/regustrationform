@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hackathon Registration</h1>
+        <form action="/submit-registration" method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Professional Details</legend>
+                
+                <label for="organization">Organization/University:</label>
+                <input type="text" id="organization" name="organization">
+                
+                <label for="position">Position/Role:</label>
+                <input type="text" id="position" name="position">
+                
+                <label for="skills">Skills/Technologies:</label>
+                <textarea id="skills" name="skills" rows="3"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <label for="motivation">Why do you want to participate?</label>
+                <textarea id="motivation" name="motivation" rows="4" required></textarea>
+                
+                <label for="experience">Relevant Experience:</label>
+                <textarea id="experience" name="experience" rows="4"></textarea>
+            </fieldset>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
